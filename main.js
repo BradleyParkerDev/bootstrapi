@@ -1,8 +1,8 @@
 ///////////////////////////////////////////////////////////////////////////////
 //////////Part 1 - Random Dog Generator
 ///////////////////////////////////////////////////////////////////////////////
-let dogImg = document.querySelector('#dogImg')
-let dogButton = document.querySelector('#dogButton')
+let dogImg = document.querySelector('#dogImg');
+let dogButton = document.querySelector('#dogButton');
 fetch('https://dog.ceo/api/breeds/image/random')
 .then(function(response){
     return response.json();
@@ -35,29 +35,29 @@ dogButton.addEventListener('click', () => {
 ///////////////////////////////////////////////////////////////////////////////
 //////////Part 2 - Weather App
 ///////////////////////////////////////////////////////////////////////////////
-let weatherForm = document.querySelector('#weatherForm')
-let cityInput = document.querySelector('#cityInput')
-let submitButton = document.querySelector('#submit')
-let temp = document.querySelector('#temp')
-let wind = document.querySelector('#wind')
-let desc = document.querySelector('#desc')
+let weatherForm = document.querySelector('#weatherForm');
+let cityInput = document.querySelector('#cityInput');
+let submitButton = document.querySelector('#submit');
+let temp = document.querySelector('#temp');
+let wind = document.querySelector('#wind');
+let desc = document.querySelector('#desc');
 
 
 
 weatherForm.addEventListener('submit',(event) =>{
     event.preventDefault();
     console.log(`Input: ${cityInput.value}`)
-    fetch(`https://goweather.herokuapp.com/weather/{${cityInput.value}}`)
+    fetch(encodeURI(`https://goweather.herokuapp.com/weather/{${cityInput.value}}`))
     .then(function(response){
         return response.json();    
     })
     .then(function(data){
         console.log(data);
-        temp.innerHTML = data.temperature
-        wind.innerHTML = data.wind
-        desc.innerHTML = data.description
+        temp.innerHTML = data.temperature;
+        wind.innerHTML = data.wind;
+        desc.innerHTML = data.description;
     })
-    cityInput.value = ""
+    cityInput.value = "";
 
 })
 
