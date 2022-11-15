@@ -22,7 +22,7 @@
                 <img src="..." class="card-img-top" alt="Dog Picture" id="dogImg">
                 <div class="card-body">
                   <h5 class="card-title">Random Dog Image</h5>
-                  <p class="card-text">Press the button below to get a new random dog image.</p>
+                  <p class="card-text">Press the button below to generate a new random dog image.</p>
                   <button href="#" class="btn btn-primary" id="dogButton">Get Dog!</button>
                 </div>
               </div>
@@ -37,7 +37,7 @@
             <form id="weatherForm">
                 <div class="mb-3">
                   <label id="cityLabel" class="form-label">City</label>
-                  <input type="text" class="form-control" id="cityInput" aria-describedby="emailHelp">
+                  <input type="text" class="form-control" id="cityInput" aria-describedby="cityHelp" autocomplete="off">
                   <div id="inputDescription" class="form-text">Enter a city to display it's weather.</div>
                 </div>
                 <button type="submit" class="btn btn-primary" id="submit">Submit</button>
@@ -45,11 +45,11 @@
                 <br>
                 <div id="weatherOutput">
                     <div class="weatherLabel">Temperature:</div>
-                        <p id="temp">temp</p> 
+                        <p id="temp"></p> 
                     <div class="weatherLabel">Wind:</div>
-                        <p id="wind">wind</p> 
+                        <p id="wind"></p> 
                     <div class="weatherLabel">Description:</div>
-                        <p id="desc">desc</p> 
+                        <p id="desc"></p> 
                 </div>
 
             </form>        

@@ -38,3 +38,9 @@ h1 {
     color: black;
     font-style: normal;
 }
+
+.card-title{
+    color: black;
+    text-decoration-line: underline;
+
+}
