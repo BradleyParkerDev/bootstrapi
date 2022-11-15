@@ -23,7 +23,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Random Dog Image</h5>
                   <p class="card-text">Press the button below to get a new random dog image.</p>
-                  <a href="#" class="btn btn-primary" id="dogButton">Get Dog!</a>
+                  <button href="#" class="btn btn-primary" id="dogButton">Get Dog!</button>
                 </div>
               </div>
         </div>
@@ -34,7 +34,14 @@
             Part 2: Weather App
         </h1>
         <div class="api-content">
-            [INSERT WEATHER APP HERE]
+            <form>
+                <div class="mb-3">
+                  <label for="cityLabel" class="form-label">City</label>
+                  <input type="text" class="form-control" id="cityInput" aria-describedby="emailHelp">
+                  <div id="inputDescription" class="form-text">Enter a city to display it's weather.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>        
         </div>
     </div>
 
