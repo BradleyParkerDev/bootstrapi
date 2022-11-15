@@ -24,3 +24,17 @@ h1 {
     font-style: italic;
     color: #999;
 }
+
+#weatherOutput{
+    color: black;
+    font-style: normal;
+}
+
+.weatherLabel{
+    text-decoration-line: underline;
+}
+
+#cityLabel{
+    color: black;
+    font-style: normal;
+}

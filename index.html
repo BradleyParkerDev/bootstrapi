@@ -34,14 +34,25 @@
             Part 2: Weather App
         </h1>
         <div class="api-content">
-            <form>
+            <form id="weatherForm">
                 <div class="mb-3">
-                  <label for="cityLabel" class="form-label">City</label>
+                  <label id="cityLabel" class="form-label">City</label>
                   <input type="text" class="form-control" id="cityInput" aria-describedby="emailHelp">
                   <div id="inputDescription" class="form-text">Enter a city to display it's weather.</div>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>        
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                <br>
+                <br>
+                <div id="weatherOutput">
+                    <div class="weatherLabel">Temperature:</div>
+                        <p id="temp">temp</p> 
+                    <div class="weatherLabel">Wind:</div>
+                        <p id="wind">wind</p> 
+                    <div class="weatherLabel">Description:</div>
+                        <p id="desc">desc</p> 
+                </div>
+
+            </form>        
         </div>
     </div>
 
